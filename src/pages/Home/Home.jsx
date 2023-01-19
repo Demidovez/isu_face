@@ -12,16 +12,16 @@ const Home = () => {
     {
       label: "Лаборатория",
       icon: (props) => <DashboardIcon {...props} />,
-      link: "/11111",
+      link: "/laboratory",
     },
     {
       label: "Просмотр отчетов",
-      link: "/11111",
+      link: "/ReportS_mes/browse/SKK",
       icon: (props) => <DashboardIcon {...props} />,
     },
     {
       label: "Выработка / потребление электроэнергии",
-      link: "/11111",
+      link: "/electricity",
       icon: (props) => <DashboardIcon {...props} />,
     },
   ]);

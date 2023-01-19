@@ -6,8 +6,12 @@ import styles from "./CardsLayout.module.scss";
 const CardsLayout = ({ items }) => {
   const navigate = useNavigate();
 
-  const goToApp = (link) => {
-    navigate("/app" + link);
+  const goToApp = (isExternal, link) => {
+    if (isExternal) {
+      window.open(link, "_blank");
+    } else {
+      navigate("/app" + link);
+    }
   };
 
   return (
