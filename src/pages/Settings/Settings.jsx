@@ -1,17 +1,18 @@
 import { useState } from "react";
 import CardsLayout from "../../components/CardsLayout/CardsLayout";
-import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.svg";
+import { ReactComponent as ManagementIcon } from "../../assets/icons/management.svg";
+import { ReactComponent as IsuIcon } from "../../assets/icons/isu.svg";
 
 const Settings = () => {
   const [sites] = useState([
     {
       label: "Управление проектами\n(боты, ису-модули)",
-      icon: (props) => <DashboardIcon {...props} />,
+      icon: (props) => <ManagementIcon {...props} />,
       link: "/projects",
     },
     {
       label: "Оригинальная ИСУ",
-      icon: (props) => <DashboardIcon {...props} />,
+      icon: (props) => <IsuIcon {...props} />,
       link: "http://172.27.70.10/MES",
       isExternal: true,
     },

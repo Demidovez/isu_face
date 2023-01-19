@@ -1,6 +1,9 @@
 import { useState } from "react";
 import CardsLayout from "../../components/CardsLayout/CardsLayout";
-import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.svg";
+import { ReactComponent as DashboardIcon } from "../../assets/icons/isu.svg";
+import { ReactComponent as LaboratoryIcon } from "../../assets/icons/laboratory.svg";
+import { ReactComponent as ReportsIcon } from "../../assets/icons/reports.svg";
+import { ReactComponent as ElectricityIcon } from "../../assets/icons/electricity.svg";
 
 const Home = () => {
   const [sites] = useState([
@@ -11,18 +14,18 @@ const Home = () => {
     },
     {
       label: "Лаборатория",
-      icon: (props) => <DashboardIcon {...props} />,
+      icon: (props) => <LaboratoryIcon {...props} />,
       link: "/laboratory",
     },
     {
       label: "Просмотр отчетов",
       link: "/ReportS_mes/browse/SKK",
-      icon: (props) => <DashboardIcon {...props} />,
+      icon: (props) => <ReportsIcon {...props} />,
     },
     {
       label: "Выработка / потребление электроэнергии",
       link: "/electricity",
-      icon: (props) => <DashboardIcon {...props} />,
+      icon: (props) => <ElectricityIcon {...props} />,
     },
   ]);
 
