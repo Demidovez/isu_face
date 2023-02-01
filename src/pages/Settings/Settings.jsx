@@ -8,7 +8,7 @@ const Settings = () => {
     {
       label: "Управление проектами\n(боты, ису-модули)",
       icon: (props) => <ManagementIcon {...props} />,
-      link: "/",
+      link: "/projects",
     },
     {
       label: "Оригинальная ИСУ",
