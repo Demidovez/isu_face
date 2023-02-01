@@ -31,8 +31,9 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Выберите приложение</h1>
+      <h2>Выберите приложение</h2>
       <CardsLayout items={sites} />
+      <br />
     </div>
   );
 };
